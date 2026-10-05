@@ -4,7 +4,7 @@
 <head>
  <meta charset="UTF-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <title>サイト名を入れてください</title>
+ <title>○○さんの日記</title>
  <link href="css/reset.css" rel="stylesheet">
  <link href="css/common.css" rel="stylesheet" type="text/css">
  <link href="css/each.css" rel="stylesheet" type="text/css">
@@ -32,10 +32,10 @@
    <nav id="js-globalnav" class="globalnav">
     <ul class="globalnav__main">
      <li class="globalnav__item"><a href="index.html">Top</a></li>
-     <li class="globalnav__item _has-child">Novel
+     <li class="globalnav__item _has-child">Diary
       <ul class=" globalnav__child">
-       <li><a href="works.html">Original</a></li>
-       <li><a href="novel.html">Fan fiction</a></li>
+       <li><a href="works.html">Series</a></li>
+       <li><a href="novel.html">Archive</a></li>
       </ul>
      </li>
      <li class="globalnav__item"><a href="sample.html">Sample</a></li>
@@ -48,27 +48,27 @@
  <!-- FV -->
  <div class="fv">
   <!-- サイト名 -->
-  <h1 class="sitename">YOUR SITE NAME</h1>
+  <h1 class="sitename">○○'S DIARY</h1>
   <div class="fv-image">
-   <img class="window" src="images/window.png" alt="ファーストビューの画像">
-   <p class="copy">今晩、星明りが落ちたら</p>
+   <img class="window" src="images/window.png" alt="窓から見える星空のイラスト">
+   <p class="copy">今日のこと、星にだけ話すように</p>
   </div>
   <!-- 装飾 -->
   <div class="stars-left">
-   <img src="images/stars-left.svg" alt="星の画像">
+   <img src="images/stars-left.svg" alt="">
   </div>
   <div class="stars-right">
-   <img src="images/stars-right.svg" alt="星の画像">
+   <img src="images/stars-right.svg" alt="">
   </div>
 
   <nav class="globalnav2">
    <ul class="flex">
     <li class="">
      <details>
-      <summary>Novel</summary>
+      <summary>Diary</summary>
       <ul class=" globalnav__child">
-       <li><a href="works.html">Original</a></li>
-       <li><a href="novel.html">Fan fiction</a></li>
+       <li><a href="works.html">Series</a></li>
+       <li><a href="novel.html">Archive</a></li>
       </ul>
 
      </details>
@@ -85,19 +85,19 @@
   <h3 class="headingM">Last up</h3>
   <ul class="update">
    <li class="update__item">
-    <time>20XX/XX/XX</time>
-    <span class="update_cat">カテゴリー</span>
-    <span class="update_content">更新内容を記載してください更新内容を記載してください更新内容を記載してください更新内容を記載してください更新内容を記載してください</span>
+    <time datetime="2026-10-05">2026/10/05</time>
+    <span class="update_cat">日常</span>
+    <span class="update_content">「金木犀の香りがした日」を書きました</span>
    </li>
    <li class="update__item">
-    <time>20XX/XX/XX</time>
-    <span class="update_cat">短編</span>
-    <span class="update_content">「〇〇〇」を公開しました</span>
+    <time datetime="2026-10-01">2026/10/01</time>
+    <span class="update_cat">シリーズ</span>
+    <span class="update_content">「ベランダ菜園はじめました」第9回を書きました</span>
    </li>
    <li class="update__item">
-    <time>20XX/XX/XX</time>
-    <span class="update_cat">連載</span>
-    <span class="update_content">「〇〇〇」第〇話を公開しました</span>
+    <time datetime="2026-09-23">2026/09/23</time>
+    <span class="update_cat">おでかけ</span>
+    <span class="update_content">「海辺の町へひとり旅」が完結しました</span>
    </li>
   </ul>
  </section>
@@ -112,10 +112,11 @@
   <!-- インフォメーション -->
   <section id="information">
    <h2 class="headingL">Information</h2>
-   <p>主に小説サイト向けのテンプレート。星空をモチーフにした、世界観重視のデザインです。<br>
-    トップ画像のコピー含め、タイトルなどはお題サイト<a href="https://nanos.jp/nautilus123/" target="_blank">ノーチラス</a>様よりお借りしております。適宜変更してお使いください。
+   <p>ようこそ、○○の日記へ。<br>
+    ここは○○が、毎日のできごとや、ふと思ったことをのんびり書き残している場所です。
    </p>
-   <p>最上部の「YOUR SITE NAME」には何か別の言葉や綴りをいれて、窓フレームのコピーの部分にサイト名を入れる形でもと良いかと思います。サイトのイメージに合わせて変更ください。</p>
+   <p>更新は気が向いたときに。夜、寝る前に少しずつ書いています。<br>
+    ※このサイトの文章はすべて仮のサンプルです。</p>
 
   </section><!-- インフォメーションここまで -->
 
@@ -123,23 +124,17 @@
   <section id="topic">
    <h2 class="headingL">Topic</h2>
    <ul class="topiclist">
-    <li class="topiclist__item grid"><a href="" target="_blank"><img
-       src="https://placehold.jp/dddddd/ffffff/675x182.png?text=sample" alt=""></a>
-     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.</p>
+    <li class="topiclist__item grid"><a href="series.html"><img
+       src="https://placehold.jp/dddddd/ffffff/675x182.png?text=sample" alt="シリーズ「ベランダ菜園はじめました」へ"></a>
+     <p>シリーズ「ベランダ菜園はじめました」を更新中です。ミニトマトとバジルが育っていく様子を、週に一度くらいのペースで記録しています。</p>
     </li>
-    <li class="topiclist__item grid"><a href="" target="_blank"><img
-       src="https://placehold.jp/dddddd/ffffff/675x182.png?text=sample" alt=""></a>
-     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.</p>
+    <li class="topiclist__item grid"><a href="novel.html"><img
+       src="https://placehold.jp/dddddd/ffffff/675x182.png?text=sample" alt="日記のアーカイブへ"></a>
+     <p>日記のアーカイブを「日常」「おでかけ」「ごはん」の3つに分けました。気になるところから読んでみてください。</p>
     </li>
-    <li class="topiclist__item grid"><a href="" target="_blank"><img
-       src="https://placehold.jp/dddddd/ffffff/675x182.png?text=sample" alt=""></a>
-     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.</p>
+    <li class="topiclist__item grid"><a href="works.html"><img
+       src="https://placehold.jp/dddddd/ffffff/675x182.png?text=sample" alt="シリーズ日記の一覧へ"></a>
+     <p>寝る前に読んだ本の感想をまとめた「夜更かし読書メモ」も、少しずつ書き足しています。</p>
     </li>
    </ul>
   </section>
@@ -152,15 +147,16 @@
     <!-- このサイトについて -->
     <section class="aboutsite">
      <h3 class="headingM">About this site</h3>
-     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi aperiam natus labore. Iure saepe nemo quod!
-      Tempore deserunt aperiam aliquam deleniti id explicabo quo, mollitia magni! Consequatur magni id debitis.</p>
+     <p>○○の毎日の記録です。うれしかったこと、ちょっと落ち込んだこと、おいしかったごはんのことなど、なんでも書いています。</p>
      <dl class="gridlist">
       <dt class="gridlist__label">Site name</dt>
-      <dd class="gridlist__text">サイト名</dd>
+      <dd class="gridlist__text">○○さんの日記</dd>
       <dt class="gridlist__label">Master</dt>
-      <dd class="gridlist__text">おなまえ</dd>
+      <dd class="gridlist__text">○○</dd>
+      <dt class="gridlist__label">Since</dt>
+      <dd class="gridlist__text">2026/04/01</dd>
       <dt class="gridlist__label">URL</dt>
-      <dd class="gridlist__text">https://～</dd>
+      <dd class="gridlist__text">https://example.com/</dd>
      </dl>
     </section><!-- このサイトについてここまで -->
     <section class="profile">
@@ -169,13 +165,11 @@
      <div class="profile__inner">
       <!-- 横並びに -->
       <!-- プロフィール画像 -->
-      <div class="profile__img"><img src="https://placehold.jp/dddddd/ffffff/400x400.png?text=sample" alt=""></div>
+      <div class="profile__img"><img src="https://placehold.jp/dddddd/ffffff/400x400.png?text=sample" alt="○○のプロフィール画像"></div>
       <!-- プロフィール文章 -->
       <div class="profile__text">
-       <p>name: おなまえ</p>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam ipsam, molestias at nobis rem eaque
-        in suscipit minima laudantium, qui exercitationem accusantium ducimus magnam voluptatibus quod, ad inventore?
-        Ipsa.</p>
+       <p>name: ○○</p>
+       <p>平日は会社員、休日はのんびり散歩をしています。夜空と甘いものが好きです。最近はベランダでミニトマトを育てています。好きな季節は秋。</p>
        <!-- SNSリスト -->
        <ul class="social-icons">
         <li class="social-icons__item x"><a href="https://x.com/" target="_blank" rel="noreferrer">
@@ -235,40 +229,21 @@
     <h3 class="headingM">Favorite</h3>
     <ul class="linklist flex">
      <li class="linklist__item"><a href=""><img src="https://placehold.jp/dddddd/ffffff/200x40.png?text=sample"
-        alt=""></a></li>
+        alt="お気に入りサイトのバナー（仮）"></a></li>
      <li class="linklist__item"><a href=""><img src="https://placehold.jp/dddddd/ffffff/200x40.png?text=sample"
-        alt=""></a></li>
+        alt="お気に入りサイトのバナー（仮）"></a></li>
      <li class="linklist__item"><a href=""><img src="https://placehold.jp/dddddd/ffffff/200x40.png?text=sample"
-        alt=""></a></li>
+        alt="お気に入りサイトのバナー（仮）"></a></li>
      <li class="linklist__item"><a href=""><img src="https://placehold.jp/dddddd/ffffff/200x40.png?text=sample"
-        alt=""></a></li>
-     <li class="linklist__item"><a href=""><img src="https://placehold.jp/dddddd/ffffff/200x40.png?text=sample"
-        alt=""></a></li>
-     <li class="linklist__item"><a href=""><img src="https://placehold.jp/dddddd/ffffff/200x40.png?text=sample"
-        alt=""></a></li>
-     <li class="linklist__item"><a href=""><img src="https://placehold.jp/dddddd/ffffff/200x40.png?text=sample"
-        alt=""></a></li>
-     <li class="linklist__item"><a href=""><img src="https://placehold.jp/dddddd/ffffff/200x40.png?text=sample"
-        alt=""></a></li>
-     <li class="linklist__item"><a href=""><img src="https://placehold.jp/dddddd/ffffff/200x40.png?text=sample"
-        alt=""></a></li>
-     <li class="linklist__item"><a href=""><img src="https://placehold.jp/dddddd/ffffff/200x40.png?text=sample"
-        alt=""></a></li>
+        alt="お気に入りサイトのバナー（仮）"></a></li>
     </ul>
    </section>
    <section>
     <h3 class="headingM">Thanks</h3>
     <ul class="linklist flex">
-     <li class="linklist__item"><a href="">テキストリンク</a></li>
-     <li class="linklist__item"><a href="">テキストリンク</a></li>
-     <li class="linklist__item"><a href="">テキストリンク</a></li>
-     <li class="linklist__item"><a href="">テキストリンク</a></li>
-     <li class="linklist__item"><a href="">テキストリンク</a></li>
-     <li class="linklist__item"><a href="">テキストリンク</a></li>
-     <li class="linklist__item"><a href="">テキストリンク</a></li>
-     <li class="linklist__item"><a href="">テキストリンク</a></li>
-     <li class="linklist__item"><a href="">テキストリンク</a></li>
-     <li class="linklist__item"><a href="">テキストリンク</a></li>
+     <li class="linklist__item"><a href="https://hiro-design.net/utsusemi/" target="_blank">空蝉デザイン（テンプレート）</a></li>
+     <li class="linklist__item"><a href="https://tabler-icons.io/" target="_blank">Tabler Icons（アイコン）</a></li>
+     <li class="linklist__item"><a href="https://simpleicons.org/" target="_blank">Simple Icons（アイコン）</a></li>
     </ul>
    </section>
   </section>
@@ -277,6 +252,7 @@
   <!-- コンタクト -->
   <section id="contact">
    <h2 class="headingL">Contact</h2>
+   <p>日記の感想や、ひとことメッセージはこちらからどうぞ。お返事は日記の中でさせていただくことがあります。</p>
    <form action="" method="post" class="mailform">
     <input id="name" type="text" name="Name" placeholder="お名前"><br>
     <input id="mail" type="email" name="Mail" placeholder="メールアドレス"><br>
@@ -301,7 +277,7 @@
 
  <!-- クレジット -->
  <footer>
-  <small>© 20xx Your site name. Designed by <a href="https://hiro-design.net/utsusemi/" target="_blank">Utsusemi
+  <small>© 2026 ○○'s Diary. Designed by <a href="https://hiro-design.net/utsusemi/" target="_blank">Utsusemi
     Design</a>.</small>
   <!-- クレジットここまで -->
  </footer>
