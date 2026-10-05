@@ -1,0 +1,16 @@
+/*  カラー設定 */
+:root {
+ --color-bg: #fdfdfd;
+ --color-text: #202020;
+ --color-main: #2e5abb;
+ --color-sub: #2e5bbb88;
+ --color-accent: #FFE87C;
+ --color-black: #202020;
+ --color-white: #ffffff;
+}
+
+/*  フォント設定 */
+:root {
+ --font-base: "Noto Serif JP", YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
+ --font-title: "EB Garamond", "Noto Serif JP", YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
+}

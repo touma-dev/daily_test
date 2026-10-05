@@ -1,0 +1,26 @@
+<svg id="stars-right.svg" xmlns="http://www.w3.org/2000/svg" width="278.5" height="272.969" viewBox="0 0 278.5 272.969">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 1px;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="線_1_のコピー_4" data-name="線 1 のコピー 4" class="cls-1" d="M1290.31,386.616l-0.37-.929,237.56-94.725,0.37,0.928Z" transform="translate(-1272.31 -129.031)"/>
+  <path id="線_1_のコピー_8" data-name="線 1 のコピー 8" class="cls-1" d="M1389.46,365.78l-0.37-.929,160.71-64.1,0.37,0.928Z" transform="translate(-1272.31 -129.031)"/>
+  <path id="線_1_のコピー_3" data-name="線 1 のコピー 3" class="cls-1" d="M1312.98,217.559l-0.37-.929,217.97-86.946,0.37,0.929Z" transform="translate(-1272.31 -129.031)"/>
+  <g id="stars2.svg">
+    <path id="Star13_2" data-name="Star13 2" class="cls-2" d="M1306.79,373.223q-7.485.394-7.88,7.876-0.39-7.482-7.87-7.876,7.47-.393,7.87-7.876Q1299.3,372.829,1306.79,373.223Z" transform="translate(-1272.31 -129.031)"/>
+    <path id="Star13_2_のコピー" data-name="Star13 2 のコピー" class="cls-2" d="M1299,388.661q-12.675.667-13.34,13.34-0.66-12.673-13.34-13.34,12.675-.666,13.34-13.339Q1286.335,387.994,1299,388.661Z" transform="translate(-1272.31 -129.031)"/>
+  </g>
+</svg>

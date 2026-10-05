@@ -1,0 +1,711 @@
+/*－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+  
+  ＩＮＤＥＸ
+  
+  －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－*/
+.fv {
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ max-width: 1200px;
+ height: 100vh;
+ margin: auto;
+ padding: 60px 20px;
+ text-align: center;
+ color: var(--color-white);
+
+ .sitename {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  font-family: var(--font-title);
+  font-weight: lighter;
+  margin-bottom: 3em;
+
+  &::before,
+  &::after {
+   content: "";
+   content: "";
+   height: 1px;
+   flex-grow: 1;
+   background: var(--color-white);
+   opacity: 0.6;
+  }
+
+  &::before {
+   margin-right: 20px;
+  }
+
+  &::after {
+   margin-left: 20px;
+  }
+ }
+
+ .fv-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+
+  .window {
+   position: absolute;
+   width: auto;
+   height: 100%;
+   z-index: -1;
+  }
+
+  .copy {
+   font-size: clamp(1.4rem, 1.327rem + 0.36vw, 1.6rem);
+   font-family: var(--font-title);
+   font-weight: lighter;
+   writing-mode: vertical-rl;
+   letter-spacing: 10px;
+  }
+ }
+
+ .stars-left,
+ .stars-right {
+  position: absolute;
+  width: 20%;
+  height: auto;
+  opacity: 0.8;
+ }
+
+ .stars-left {
+  top: 40vh;
+  left: 4%;
+ }
+
+ .stars-right {
+  top: 30vh;
+  right: 4%;
+ }
+}
+
+@media screen and (max-width: 520px) {
+ .fv {
+  padding: 40px 20px;
+
+  .sitename {
+   margin-bottom: 40px;
+  }
+
+  .fv-image {
+   max-width: 300px;
+   height: 500px;
+  }
+
+  .stars-left,
+  .stars-right {
+   width: 35%;
+  }
+
+  .stars-left {
+   top: 60vh;
+   left: 2%;
+  }
+
+  .stars-right {
+   top: 20vh;
+   right: 2%;
+  }
+ }
+}
+
+.globalnav2 {
+ text-align: left;
+ margin-top: 40px;
+
+ ul {
+  justify-content: center;
+  align-items: start;
+  color: var(--color-white);
+
+  li {
+   a {
+    text-decoration: none;
+   }
+  }
+
+  li:has(summary) {
+   width: 100px;
+  }
+
+  details {
+   position: absolute;
+
+   summary {
+    list-style: none;
+    width: fit-content;
+    cursor: pointer;
+   }
+
+   ul {
+    margin-top: 10px;
+
+    li {
+     backdrop-filter: blur(4px);
+
+    }
+   }
+  }
+ }
+}
+
+@media screen and (max-width: 520px) {
+
+ .globalnav2 {
+  margin-top: 20px;
+ }
+}
+
+/*－－－－－－－－－－  更新履歴 －－－－－－－－－－*/
+.update__wrap {
+ padding: 40px;
+ margin-bottom: 2em;
+
+ .headingM {
+  margin-bottom: 10px;
+  color: var(--color-white);
+ }
+}
+
+.update {
+ height: 200px;
+ overflow-y: auto;
+ padding: 20px 40px 20px 20px;
+ border: 1px solid var(--color-main);
+ border-left: none;
+ border-right: none;
+ background-color: var(--color-sub);
+ color: var(--color-white);
+
+
+ .update__item {
+  display: flex;
+  gap: 0px 10px;
+  padding: 10px 0;
+
+  >* {
+   padding: 2px 4px;
+  }
+
+  .update_cat {
+   height: fit-content;
+   flex-shrink: 0;
+  }
+
+
+ }
+
+ .update__item:not(:last-child) {}
+}
+
+
+/* スマホ */
+@media screen and (max-width: 768px) {
+ .update__item {
+  flex-direction: column;
+  gap: 4px;
+
+  .update_cat,
+  .update_content {
+   padding-left: 20px;
+  }
+ }
+}
+
+/*－－－－－－－－－－ Information －－－－－－－－－－*/
+#information {
+ padding-top: 60px;
+}
+
+/*－－－－－－－－－－ TOPIC －－－－－－－－－－*/
+.topiclist__item {
+ gap: 0 20px;
+ margin-bottom: 10px;
+}
+
+/*－－－－－－－－－－ ABOUT －－－－－－－－－－*/
+#about {
+ .--2column {
+  align-items: start;
+
+  section:first-of-type,
+  section:nth-of-type(2) {
+   padding: 0;
+  }
+ }
+}
+
+/*－－－－－－－－－－ Profile －－－－－－－－－－*/
+.profile__img {
+ float: left;
+}
+
+.profile__img img {
+ border-radius: 50%;
+ width: 140px;
+ margin-right: 1em;
+}
+
+/*  SNSアイコン  */
+.social-icons {
+ display: flex;
+ gap: 2px;
+ flex-wrap: wrap;
+ margin-top: 18px;
+}
+
+.social-icons a {
+ width: 46px;
+ height: 46px;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-decoration: none;
+ transition: all 0.2s ease;
+}
+
+.social-icons a:hover {
+ transform: translateY(-3px);
+}
+
+.social-icons svg {
+ width: 20px;
+ height: 20px;
+ opacity: 0.8;
+}
+
+
+/*－－－－－－－－－－ Contact －－－－－－－－－－*/
+
+.mailform {
+ margin: auto;
+ width: fit-content;
+}
+
+
+/*－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+Works
+
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－*/
+/*  表紙一覧  */
+.works {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 60px;
+}
+
+.work-card {
+ width: calc((100% - 60px) / 2);
+ border: 1px solid rgb(from var(--color-sub) r g b / 0.3);
+ padding: 10px;
+ overflow: hidden;
+ transition: all 0.2s ease;
+
+ &:hover {
+  border-color: var(--color-main);
+  box-shadow: 0 4px 14px rgb(from var(--color-sub) r g b / 0.05);
+ }
+
+ a {
+  text-decoration: none;
+
+  &:hover {
+   color: inherit;
+  }
+ }
+
+ /* サムネイル */
+ .work-cover {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+ }
+
+ /* カード内テキストエリア */
+ .work-body {
+  padding: 12px 14px 14px;
+
+  .work-title {
+   font-size: 1.2em;
+   margin: 0 0 1em;
+   text-wrap: auto;
+  }
+
+  .work-description {
+   display: -webkit-box;
+   -webkit-line-clamp: 3;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+  }
+
+  .work-tags {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 4px;
+
+   .tag {
+    font-size: 0.8em;
+    color: var(--color-main);
+    background-color: rgb(from var(--color-sub) r g b / 0.05);
+    padding: 2px 6px;
+   }
+
+  }
+ }
+
+}
+
+@media screen and (max-width: 768px) {
+ .work-card {
+  width: 100%;
+ }
+}
+
+/*－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+Novel
+
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－*/
+
+/*－－－－－－－－－－  タブ切り替え －－－－－－－－－－*/
+.tab-radio {
+ position: absolute;
+ left: -9999px;
+}
+
+/* タブバー */
+.tab-bar {
+ display: flex;
+ gap: 30px;
+ justify-content: center;
+ flex-wrap: wrap;
+ z-index: 99;
+}
+
+@media screen and (max-width: 520px) {
+ .tab-bar {
+  gap: 0px;
+ }
+}
+
+
+.tab-bar label {
+ cursor: pointer;
+ padding: 4px 8px;
+ transition: all 0.2s ease;
+}
+
+/* ── 選択されたタブのスタイル ── */
+#tab-catA:checked~.tab-bar label[for="tab-catA"],
+#tab-catB:checked~.tab-bar label[for="tab-catB"],
+#tab-catC:checked~.tab-bar label[for="tab-catC"] {
+ background-color: rgb(from var(--color-sub) r g b / 0.05);
+ color: var(--color-main);
+}
+
+/* ── コンテンツパネル ── */
+.tab-panels {
+ position: relative;
+ margin-top: 3em;
+}
+
+.panel {
+ display: none;
+ flex-direction: column;
+ animation: fadeIn 0.3s ease;
+ padding-top: 1em;
+}
+
+@keyframes fadeIn {
+ from {
+  opacity: 0;
+ }
+
+ to {
+  opacity: 1;
+ }
+}
+
+/* どのタブが選ばれているかで対応パネルを表示 */
+#tab-catA:checked~.tab-panels #panel-catA,
+#tab-catB:checked~.tab-panels #panel-catB,
+#tab-catC:checked~.tab-panels #panel-catC {
+ position: relative;
+ display: block;
+}
+
+
+
+/*－－－－－－－－－－  小説一覧 －－－－－－－－－－*/
+/* 目次 */
+.toc {
+ display: flex;
+ gap: 20px;
+ flex-wrap: wrap;
+ justify-content: flex-end;
+ margin-bottom: 2em;
+
+ li {
+  display: flex;
+  gap: 4px;
+
+  &::before {
+   content: "---";
+   display: block;
+   color: var(--color-main);
+  }
+ }
+}
+
+@media screen and (max-width: 768px) {
+ .toc {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  justify-content: flex-start;
+  gap: 4px 20px;
+  background-color: var(--color-white);
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+
+  li {
+   font-size: 0.8em;
+   overflow-wrap: anywhere;
+
+   &::before {
+    content: "-";
+   }
+  }
+ }
+}
+
+/* 小説一覧共通 */
+.new {
+ color: var(--color-main);
+ font-size: smaller;
+ margin-left: 10px;
+ background-color: rgb(from var(--color-sub) r g b / 0.05);
+}
+
+.tags {
+ margin-bottom: 40px;
+
+ li {
+  font-size: smaller;
+  color: var(--color-main);
+  background-color: rgb(from var(--color-sub) r g b / 0.05);
+  padding: 2px 6px;
+ }
+}
+
+.novellist {
+ margin-top: 20px;
+}
+
+.btn.novel-return {
+ display: inline-flex;
+ align-items: center;
+ background-color: transparent;
+ color: var(--color-main);
+ border-color: var(--color-sub);
+
+ .arrow {
+  margin-left: 4px;
+  margin-right: 8px;
+  border-color: var(--color-sub);
+ }
+
+ &:hover {
+  background-color: var(--color-sub);
+  color: var(--color-white);
+
+  .arrow {
+   border-color: var(--color-white);
+  }
+ }
+}
+
+/* 小説のタイトル */
+.novellist__title {
+ font-family: var(--font-title);
+ font-weight: 600;
+  font-size: clamp(1.2rem, 1.127rem + 0.36vw, 1.4rem);
+}
+
+/* 数字プラス小タイトルの数字の色 */
+.novellist__number {
+ color: var(--color-sub);
+ margin-right: 10px;
+}
+
+/* 短文の補足説明 */
+.novellist__text {
+ display: block;
+ margin: 10px;
+ margin-left: 20px;
+ opacity: 0.8;
+}
+
+/* 長編、中編エリア */
+.series.box,
+.novellist__item.box {
+ border-color: var(--color-accent);
+ margin-top: 2em;
+
+ .star {
+  fill: var(--color-accent);
+ }
+}
+
+@media screen and (max-width: 520px) {
+
+ .series.box,
+ .novellist__item.box {
+  padding: 1.2em;
+ }
+}
+
+.novellist__item {
+ border-right: none;
+ border-left: none;
+}
+
+.novellist__item .grid {
+ grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
+ gap: 20px;
+}
+
+/*  短編エリア */
+.short .novellist__item {
+ margin-bottom: 2em;
+}
+
+.short .novellist__item>a {
+ font-size: 1.1em;
+ font-family: var(--font-title);
+}
+
+
+/*－－－－－－－－－－  長編目次ページ －－－－－－－－－－*/
+/* サムネイル */
+.series-cover {
+ width: 100%;
+ aspect-ratio: 16 / 9;
+ object-fit: cover;
+ display: block;
+}
+
+/* タイトル */
+.series-title {
+ text-wrap: auto;
+}
+
+/* あらすじ */
+.series-description {
+ display: -webkit-box;
+ -webkit-line-clamp: 3;
+ -webkit-box-orient: vertical;
+ overflow: hidden;
+}
+
+/* タグ */
+.series-tags {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 4px;
+
+ .series-tag {
+  font-size: 0.8em;
+  color: var(--color-main);
+  background-color: rgb(from var(--color-sub) r g b / 0.05);
+  padding: 2px 6px;
+ }
+
+}
+
+/* 目次 */
+.novellist.series-toc {
+ .novellist__item {
+  margin-bottom: 2em;
+
+  .novellist__text {
+   display: inline;
+  }
+ }
+}
+
+/*－－－－－－－－－－  小説本文 －－－－－－－－－－*/
+
+section.novel-body {
+ max-width: 800px;
+ padding-top: 6em;
+
+ p {
+  line-height: 2;
+  margin: 2em 0;
+  /* ▼　自動改行しない場合は削除 */
+  white-space: pre-wrap;
+ }
+}
+
+.novel-title {
+ font-family: var(--font-title);
+ font-weight: 600;
+ font-size: 1.6em;
+ margin: 3em 0;
+}
+
+.novel-nav {
+ margin: 4em auto;
+ padding: 0;
+
+ nav {
+  justify-content: space-between;
+  border-top: 1px solid var(--color-sub);
+  padding: 10px;
+
+  a {
+   text-decoration: none;
+   transition: all 0.2s ease;
+     .arrow {
+       width: 10px;
+       height: 10px;
+       margin: 0 4px;
+      }
+      &:hover{
+       .arrow {
+        border-color: var(--color-white);
+       }
+      }
+  }
+
+  .btn {
+   border: none;
+  }
+ }
+}
+
+.afterword {
+ max-width: 800px;
+ margin: 4em auto;
+ border: none;
+ background-color: rgb(from var(--color-sub) r g b / 0.05);
+}
